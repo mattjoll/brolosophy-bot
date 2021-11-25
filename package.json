@@ -1,6 +1,6 @@
 {
   "name": "brolosophy-bot",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A custom Discord bot",
   "main": "src/index.js",
   "repository": "https://github.com/mattjoll/brolosophy-bot",
