@@ -6,6 +6,10 @@
   "repository": "https://github.com/mattjoll/brolosophy-bot",
   "author": "Matt Joll",
   "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "13.3.1"
+  },
   "devDependencies": {
     "prettier": "2.4.1"
   },
