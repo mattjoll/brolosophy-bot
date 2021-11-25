@@ -4,5 +4,8 @@
   "description": "A custom Discord bot",
   "main": "src/index.js",
   "repository": "https://github.com/mattjoll/brolosophy-bot",
-  "author": "Matt Joll"
+  "author": "Matt Joll",
+  "devDependencies": {
+    "prettier": "2.4.1"
+  }
 }
