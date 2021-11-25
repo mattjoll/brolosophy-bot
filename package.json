@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "repository": "https://github.com/mattjoll/brolosophy-bot",
   "author": "Matt Joll",
+  "license": "ISC",
   "devDependencies": {
     "prettier": "2.4.1"
   }
