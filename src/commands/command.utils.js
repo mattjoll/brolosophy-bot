@@ -4,8 +4,15 @@ const { PingCommand } = require('./ping.command');
 
 const supportedCommands = [new PingCommand()];
 
+/**
+ * Utilities used for setting up and handling bot commands.
+ */
 class CommandUtils {
-  static async handleInteraction(interaction) {
+  /**
+   * Handle an incoming interaction as a command. If the interaction it not a command, do nothing.
+   * @param {Interaction<CacheType>} interaction - The interaction received by the bot.
+   */
+  static async handleInteractionAsCommand(interaction) {
     if (!interaction.isCommand()) return;
 
     const { commandName } = interaction;
@@ -14,7 +21,10 @@ class CommandUtils {
     await command.handle(interaction);
   }
 
-  static setUpCommands() {
+  /**
+   * Create or update all global commands currently supported by the bot.
+   */
+  static setUpGlobalCommands() {
     const commandsToSetUp = [];
 
     supportedCommands.forEach((command) => {
