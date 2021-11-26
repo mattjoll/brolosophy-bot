@@ -6,6 +6,10 @@ class PingCommand {
     this.name = 'ping';
   }
 
+  async handle(interaction) {
+    await interaction.reply('Pong!');
+  }
+
   register() {
     const commandBuilder = new SlashCommandBuilder()
       .setName(this.name)
